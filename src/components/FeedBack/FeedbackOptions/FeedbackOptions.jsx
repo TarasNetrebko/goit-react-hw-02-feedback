@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import {Container, Button} from "./FeedbackOptions.styled"
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
@@ -20,9 +20,3 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 FeedbackOptions.propTypes = {
     onLeaveFeedback: PropTypes.func.isRequired
 }
-const Container = styled.div`
-  min-width: 215px;
-`
-const Button = styled.button`
-  margin-right: 10px;
-`

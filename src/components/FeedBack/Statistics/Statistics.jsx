@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
-import styled from "styled-components"
 import { Notification } from "./Notification/Notification"
+import { Span } from "./Statistics.styled"
 
 export const Statisctics = ({
   good,
@@ -25,8 +25,3 @@ Statisctics.propTypes = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired
 }
-
-const Span = styled.span`
-  min-width: 215px;
-  margin-bottom: 10px;
-`
