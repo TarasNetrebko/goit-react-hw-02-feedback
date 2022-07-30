@@ -37,7 +37,7 @@ export class Feedback extends Component {
         <Section
           title={'Please leave feedback'}
           children={
-            <FeedbackOptions onLeaveFeedback={this.increaseFeedbackCount} />
+            <FeedbackOptions options={["good", "neutral", "bad"]} onLeaveFeedback={this.increaseFeedbackCount} />
           }
         />
         <Section
