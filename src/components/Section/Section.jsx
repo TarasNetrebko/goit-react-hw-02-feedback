@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import PropTypes from "prop-types"
+import {Container, Title} from "./Section.styled"
 
 export const Section = ({ title, children }) => {
     return (
@@ -9,13 +10,7 @@ export const Section = ({ title, children }) => {
     )
 }
 
-const Container = styled.div`
-    min-width: 215px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-`
-const Title = styled.b`
-    margin-bottom: 20px;
-`
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired
+}
