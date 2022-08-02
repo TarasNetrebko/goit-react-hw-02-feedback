@@ -33,7 +33,7 @@ export class App extends Component {
           title={'Please leave feedback'}
           children={
             <FeedbackOptions
-              options={this.state}
+              options={Object.keys(this.state)}
               onLeaveFeedback={this.increaseFeedbackCount}
             />
           }
